@@ -4,3 +4,11 @@
 #task-form {
     display: none;
 }
+
+a:hover {
+    text-decorations: none;
+}
+
+.well a:hover {
+    text-decorations: line-through;
+}
