@@ -1,5 +1,5 @@
 class UserTasksController < ApplicationController
-  before_action :all_tasks, only: [:index, :create, :update]
+  before_action :all_tasks, only: [:index, :create, :update, :destroy]
   before_action :set_user_task, only: [:show, :edit, :update, :destroy]
 
   # GET /user_tasks
@@ -63,6 +63,7 @@ class UserTasksController < ApplicationController
     respond_to do |format|
       format.html { redirect_to user_tasks_url, notice: 'User task was successfully destroyed.' }
       format.json { head :no_content }
+      format.js
     end
   end
 
