@@ -4,6 +4,6 @@
     <%= link_to fa_icon("pencil"), edit_user_task_path(user_task), remote: true%>
     
     <div class="pull-right">
-    <%= user_task.due.stamp("01/05/1999") %>  
+    <%= user_task.due.stamp ("01/05/1999") if user_task.due %>  
     </div>
 </div>
